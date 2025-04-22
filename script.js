@@ -3,7 +3,7 @@ let dots = document.getElementById("dots");
 let moreText = document.getElementById("more");
 
 btn.addEventListener("click", () => {
-    if (dots.style.display === "inline") {
+    if (dots.style.display === "inline" || dots.style.display == '') {
         dots.style.display = "none";
         btn.innerHTML = "Read Less";
         moreText.style.display = "inline";
